@@ -1,0 +1,22 @@
+{
+  "name": "qa-automation-tests",
+  "version": "1.0.0",
+  "description": "E2E Tests for Todo Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "test:headed": "cypress run --headed",
+    "test:open": "cypress open",
+    "test:chrome": "cypress run --browser chrome",
+    "test:firefox": "cypress run --browser firefox"
+  },
+  "devDependencies": {
+    "cypress": "^13.6.2"
+  },
+  "keywords": [
+    "cypress",
+    "e2e",
+    "testing",
+    "automation"
+  ]
+}
