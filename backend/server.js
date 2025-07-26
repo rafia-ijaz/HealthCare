@@ -172,8 +172,9 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-server.listen(PORT, () => {
+server.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 Server running on port ${PORT}`);
   console.log(`📡 Socket.IO enabled for real-time features`);
-  console.log(`🌐 API available at http://localhost:${PORT}/api`);
+  console.log(`🌐 API available at http://0.0.0.0:${PORT}/api`);
+  console.log(`🌐 API also available at http://localhost:${PORT}/api`);
 });
