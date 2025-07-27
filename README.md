@@ -1,4 +1,4 @@
-# 🚀 Code Snippet Sharing Platform
+# 🚀  Real-Time Patient Notes Sharing App
 
 A real-time code snippet sharing platform built with React and Node.js, featuring live updates, syntax highlighting, and modern UI/UX.
 
