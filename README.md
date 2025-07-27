@@ -1,6 +1,6 @@
 # 🚀  Real-Time Patient Notes Sharing App
 
-A Real-Time Patient Notes Sharing App sharing platform built with React and Node.js, featuring live updates, syntax highlighting, and modern UI/UX.
+A real-time healthcare application built with React and Node.js, designed for providers to securely share patient notes/snippets instantly. Features live updates, syntax highlighting for medical data, and a modern responsive UI/UX optimized for desktop and mobile.
 
 ## ✨ Features
 
