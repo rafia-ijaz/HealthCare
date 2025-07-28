@@ -21,17 +21,16 @@ jobs:
 
       - name: 📦 Install dependencies
         run: |
-          cd frontend
           npm ci
 
       - name: 📥 Install Playwright Browsers
         run: |
-          cd frontend
+          
           npx playwright install --with-deps
 
       - name: 🚀 Run Playwright tests
         run: |
-          cd frontend
+          
           npx playwright test
 
       - name: 📊 Upload HTML report
@@ -39,4 +38,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: playwright-report
-          path: frontend/playwright-report
+          path: playwright-report
