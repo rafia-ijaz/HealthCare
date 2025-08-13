@@ -1,0 +1,106 @@
+<testsuites id="" name="" tests="3" failures="2" skipped="0" errors="0" time="32.914653">
+<testsuite name="checkout-flow.spec.ts" timestamp="2025-08-13T07:41:08.601Z" hostname="chromium" tests="3" failures="2" skipped="0" time="38.467" errors="0">
+<testcase name="Sauce Labs Demo - Complete Checkout Flow › Complete checkout flow with 3 random products" classname="checkout-flow.spec.ts" time="6.282">
+<failure message="checkout-flow.spec.ts:34:7 Complete checkout flow with 3 random products" type="FAILURE">
+<![CDATA[  [chromium] › checkout-flow.spec.ts:34:7 › Sauce Labs Demo - Complete Checkout Flow › Complete checkout flow with 3 random products 
+
+    Error: Timed out 5000ms waiting for expect(locator).toHaveText(expected)
+
+    Locator: locator('.shopping_cart_badge')
+    Expected string: "0"
+    Received: <element(s) not found>
+    Call log:
+      - Expect "toHaveText" with timeout 5000ms
+      - waiting for locator('.shopping_cart_badge')
+
+
+       at ../src/pages/InventoryPage.ts:66
+
+      64 |
+      65 |   async expectCartItemCount(expectedCount: number): Promise<void> {
+    > 66 |     await expect(this.cartBadge).toHaveText(expectedCount.toString());
+         |                                  ^
+      67 |   }
+      68 |
+      69 |   async goToCart(): Promise<void> {
+        at InventoryPage.expectCartItemCount (/workspace/sauce-demo-automation/src/pages/InventoryPage.ts:66:34)
+        at /workspace/sauce-demo-automation/tests/checkout-flow.spec.ts:55:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/checkout-flow-Sauce-Labs-D-77ca1-flow-with-3-random-products-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/checkout-flow-Sauce-Labs-D-77ca1-flow-with-3-random-products-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/checkout-flow-Sauce-Labs-D-77ca1-flow-with-3-random-products-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[[2025-08-13T07:41:09.959Z] Starting complete checkout flow test
+[2025-08-13T07:41:09.959Z] Step 1: Logging in with standard user
+[2025-08-13T07:41:10.124Z] Step 2: Verifying products are loaded
+
+[[ATTACHMENT|checkout-flow-Sauce-Labs-D-77ca1-flow-with-3-random-products-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|checkout-flow-Sauce-Labs-D-77ca1-flow-with-3-random-products-chromium/video.webm]]
+
+[[ATTACHMENT|checkout-flow-Sauce-Labs-D-77ca1-flow-with-3-random-products-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Sauce Labs Demo - Complete Checkout Flow › Verify cart functionality and navigation" classname="checkout-flow.spec.ts" time="1.221">
+<system-out>
+<![CDATA[[2025-08-13T07:41:09.954Z] Starting cart functionality verification test
+[2025-08-13T07:41:10.278Z] Cart functionality verification test completed
+]]>
+</system-out>
+</testcase>
+<testcase name="Sauce Labs Demo - Complete Checkout Flow › Verify product sorting functionality" classname="checkout-flow.spec.ts" time="30.964">
+<failure message="checkout-flow.spec.ts:174:7 Verify product sorting functionality" type="FAILURE">
+<![CDATA[  [chromium] › checkout-flow.spec.ts:174:7 › Sauce Labs Demo - Complete Checkout Flow › Verify product sorting functionality 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.selectOption: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-test="product_sort_container"]')
+
+
+       at ../src/pages/InventoryPage.ts:74
+
+      72 |
+      73 |   async sortProducts(sortOption: 'az' | 'za' | 'lohi' | 'hilo'): Promise<void> {
+    > 74 |     await this.sortDropdown.selectOption(sortOption);
+         |                             ^
+      75 |   }
+      76 |
+      77 |   async getProductNames(): Promise<string[]> {
+        at InventoryPage.sortProducts (/workspace/sauce-demo-automation/src/pages/InventoryPage.ts:74:29)
+        at /workspace/sauce-demo-automation/tests/checkout-flow.spec.ts:189:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/checkout-flow-Sauce-Labs-D-2593c-oduct-sorting-functionality-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/checkout-flow-Sauce-Labs-D-2593c-oduct-sorting-functionality-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/checkout-flow-Sauce-Labs-D-2593c-oduct-sorting-functionality-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[[2025-08-13T07:41:11.063Z] Starting product sorting verification test
+
+[[ATTACHMENT|checkout-flow-Sauce-Labs-D-2593c-oduct-sorting-functionality-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|checkout-flow-Sauce-Labs-D-2593c-oduct-sorting-functionality-chromium/video.webm]]
+
+[[ATTACHMENT|checkout-flow-Sauce-Labs-D-2593c-oduct-sorting-functionality-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

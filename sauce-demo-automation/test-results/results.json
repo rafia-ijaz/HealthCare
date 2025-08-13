@@ -1,0 +1,358 @@
+{
+  "config": {
+    "configFile": "/workspace/sauce-demo-automation/playwright.config.ts",
+    "rootDir": "/workspace/sauce-demo-automation/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "test-results/html-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/results.xml"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/workspace/sauce-demo-automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/workspace/sauce-demo-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/workspace/sauce-demo-automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/workspace/sauce-demo-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/workspace/sauce-demo-automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/workspace/sauce-demo-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/workspace/sauce-demo-automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "/workspace/sauce-demo-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/workspace/sauce-demo-automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "Mobile Safari",
+        "name": "Mobile Safari",
+        "testDir": "/workspace/sauce-demo-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.54.2",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "checkout-flow.spec.ts",
+      "file": "checkout-flow.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Sauce Labs Demo - Complete Checkout Flow",
+          "file": "checkout-flow.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Complete checkout flow with 3 random products",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6282,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('.shopping_cart_badge')\nExpected string: \u001b[32m\"0\"\u001b[39m\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.shopping_cart_badge')\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('.shopping_cart_badge')\nExpected string: \u001b[32m\"0\"\u001b[39m\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.shopping_cart_badge')\u001b[22m\n\n    at InventoryPage.expectCartItemCount (/workspace/sauce-demo-automation/src/pages/InventoryPage.ts:66:34)\n    at /workspace/sauce-demo-automation/tests/checkout-flow.spec.ts:55:25",
+                        "location": {
+                          "file": "/workspace/sauce-demo-automation/src/pages/InventoryPage.ts",
+                          "column": 34,
+                          "line": 66
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../src/pages/InventoryPage.ts:66\n\n\u001b[0m \u001b[90m 64 |\u001b[39m\n \u001b[90m 65 |\u001b[39m   \u001b[36masync\u001b[39m expectCartItemCount(expectedCount\u001b[33m:\u001b[39m number)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 66 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcartBadge)\u001b[33m.\u001b[39mtoHaveText(expectedCount\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 67 |\u001b[39m   }\n \u001b[90m 68 |\u001b[39m\n \u001b[90m 69 |\u001b[39m   \u001b[36masync\u001b[39m goToCart()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/sauce-demo-automation/src/pages/InventoryPage.ts",
+                            "column": 34,
+                            "line": 66
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('.shopping_cart_badge')\nExpected string: \u001b[32m\"0\"\u001b[39m\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.shopping_cart_badge')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../src/pages/InventoryPage.ts:66\n\n\u001b[0m \u001b[90m 64 |\u001b[39m\n \u001b[90m 65 |\u001b[39m   \u001b[36masync\u001b[39m expectCartItemCount(expectedCount\u001b[33m:\u001b[39m number)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 66 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcartBadge)\u001b[33m.\u001b[39mtoHaveText(expectedCount\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 67 |\u001b[39m   }\n \u001b[90m 68 |\u001b[39m\n \u001b[90m 69 |\u001b[39m   \u001b[36masync\u001b[39m goToCart()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m\n\u001b[2m    at InventoryPage.expectCartItemCount (/workspace/sauce-demo-automation/src/pages/InventoryPage.ts:66:34)\u001b[22m\n\u001b[2m    at /workspace/sauce-demo-automation/tests/checkout-flow.spec.ts:55:25\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[2025-08-13T07:41:09.959Z] Starting complete checkout flow test\n"
+                        },
+                        {
+                          "text": "[2025-08-13T07:41:09.959Z] Step 1: Logging in with standard user\n"
+                        },
+                        {
+                          "text": "[2025-08-13T07:41:10.124Z] Step 2: Verifying products are loaded\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-13T07:41:09.054Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/sauce-demo-automation/test-results/checkout-flow-Sauce-Labs-D-77ca1-flow-with-3-random-products-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/workspace/sauce-demo-automation/test-results/checkout-flow-Sauce-Labs-D-77ca1-flow-with-3-random-products-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/sauce-demo-automation/test-results/checkout-flow-Sauce-Labs-D-77ca1-flow-with-3-random-products-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/sauce-demo-automation/src/pages/InventoryPage.ts",
+                        "column": 34,
+                        "line": 66
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "bd61b1856f0a92f3f43c-f7bdc4fda50720021e8f",
+              "file": "checkout-flow.spec.ts",
+              "line": 34,
+              "column": 7
+            },
+            {
+              "title": "Verify cart functionality and navigation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1221,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2025-08-13T07:41:09.954Z] Starting cart functionality verification test\n"
+                        },
+                        {
+                          "text": "[2025-08-13T07:41:10.278Z] Cart functionality verification test completed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-13T07:41:09.052Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bd61b1856f0a92f3f43c-e33d188ac0c794623a9b",
+              "file": "checkout-flow.spec.ts",
+              "line": 147,
+              "column": 7
+            },
+            {
+              "title": "Verify product sorting functionality",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "timedOut",
+                      "duration": 30964,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/workspace/sauce-demo-automation/src/pages/InventoryPage.ts",
+                            "column": 29,
+                            "line": 74
+                          },
+                          "message": "Error: locator.selectOption: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"product_sort_container\"]')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../src/pages/InventoryPage.ts:74\n\n\u001b[0m \u001b[90m 72 |\u001b[39m\n \u001b[90m 73 |\u001b[39m   \u001b[36masync\u001b[39m sortProducts(sortOption\u001b[33m:\u001b[39m \u001b[32m'az'\u001b[39m \u001b[33m|\u001b[39m \u001b[32m'za'\u001b[39m \u001b[33m|\u001b[39m \u001b[32m'lohi'\u001b[39m \u001b[33m|\u001b[39m \u001b[32m'hilo'\u001b[39m)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 74 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msortDropdown\u001b[33m.\u001b[39mselectOption(sortOption)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 75 |\u001b[39m   }\n \u001b[90m 76 |\u001b[39m\n \u001b[90m 77 |\u001b[39m   \u001b[36masync\u001b[39m getProductNames()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[33mstring\u001b[39m[]\u001b[33m>\u001b[39m {\u001b[0m\n\u001b[2m    at InventoryPage.sortProducts (/workspace/sauce-demo-automation/src/pages/InventoryPage.ts:74:29)\u001b[22m\n\u001b[2m    at /workspace/sauce-demo-automation/tests/checkout-flow.spec.ts:189:25\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[2025-08-13T07:41:11.063Z] Starting product sorting verification test\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-13T07:41:10.373Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspace/sauce-demo-automation/test-results/checkout-flow-Sauce-Labs-D-2593c-oduct-sorting-functionality-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/workspace/sauce-demo-automation/test-results/checkout-flow-Sauce-Labs-D-2593c-oduct-sorting-functionality-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/sauce-demo-automation/test-results/checkout-flow-Sauce-Labs-D-2593c-oduct-sorting-functionality-chromium/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "bd61b1856f0a92f3f43c-d058b69a5311af24eb21",
+              "file": "checkout-flow.spec.ts",
+              "line": 174,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-08-13T07:41:08.455Z",
+    "duration": 32914.653,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}
